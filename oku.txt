@@ -1,0 +1,2 @@
+npm adduser ile npm.jsye giriş yap.
+npm publish ile kodlarını npm.js ye pushla
