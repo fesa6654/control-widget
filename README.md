@@ -7,8 +7,8 @@
 
 ### You can use this component like this below
 
-![Code Example](http://www.alvemsis.com/SefaControlWidget.png)
+![Code Example](http://www.alvemsis.com/ControlWidget.png)
 
 ### For Dynamic Using
 
-![Dynamic Code Example](http://www.alvemsis.com/DynamicSefaControlWidget.png)
+![Dynamic Code Example](http://www.alvemsis.com/DynamicControlWidget.png)
