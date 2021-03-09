@@ -31,26 +31,10 @@ export default /*#__PURE__*/ {
       return this.position;
     },
   },
-  mounted() {
-    this.switchControl();
-  },
   methods: {
     switchPosition() {
       this.receivePosition = !this.receivePosition;
       this.$emit("buttonClick", this.receivePosition);
-    },
-    switchControl() {
-      if (this.receivePosition === true) {
-        this.receivePosition = false;
-        this.position = 80;
-        this.buton = document.querySelector("div.button");
-        this.buton.style.marginLeft = `${this.position}px`;
-      } else if (this.receivePosition === false) {
-        this.receivePosition = true;
-        this.position = -80;
-        this.buton = document.querySelector("div.button");
-        this.buton.style.marginLeft = `${this.position}px`;
-      }
     },
   },
 };
@@ -75,7 +59,6 @@ export default /*#__PURE__*/ {
         :style="{ marginLeft: margin + 'px' }"
         @click="switchPosition()"
       >
-        <div class="draw">||</div>
       </div>
       <div class="on">|</div>
       <div class="off">O</div>
@@ -85,93 +68,86 @@ export default /*#__PURE__*/ {
 
 <style scoped>
 .background {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  position: relative;
-  width: 250px;
-  height: 125px;
-  background-color: rgb(145, 145, 145);
-  border-radius: 10px;
-  box-shadow: 0 0 15px grey;
-  user-select: none;
-  padding-top: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif !important;
+  position: relative !important;
+  width: 220px !important;
+  height: 105px !important;
+  background-color: rgb(145, 145, 145) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 0 15px grey !important;
+  user-select: none !important;
+  padding-top: 15px !important;
 }
 
 .status {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  align-items: center;
-  text-align: center;
-  font-size: 21px;
-  font-weight: bold;
-  color: white;
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute !important;
+  align-items: center !important;
+  text-align: center !important;
+  font-size: 21px !important;
+  font-weight: bold !important;
+  color: white !important;
 }
 
 .light {
-  width: 120px;
-  height: 25px;
-  border-radius: 2px;
-  margin: 0 auto;
-  text-align: center;
+  width: 120px !important;
+  height: 25px !important;
+  border-radius: 2px !important;
+  margin: 0 auto !important;
+  text-align: center !important;
 }
 
 .out {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 20px;
+  position: relative !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding-top: 20px !important;
 }
 
 .on {
-  width: 90px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(52, 211, 65);
-  border-bottom-left-radius: 20px;
-  border-top-left-radius: 20px;
-  font-size: 30px;
-  font-weight: bold;
-  color: white;
-  box-shadow: 0 0 5px rgb(52, 211, 65);
-  border: 2px solid rgb(52, 255, 65);
+  width: 70px !important;
+  height: 40px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background-color: rgb(52, 211, 65) !important;
+  border-bottom-left-radius: 10px !important;
+  border-top-left-radius: 10px !important;
+  font-size: 25px !important;
+  font-weight: bold !important;
+  color: white !important;
+  box-shadow: 0 0 5px rgb(52, 211, 65) !important;
+  border: 2px solid rgb(52, 255, 65) !important;
 }
 
 .off {
-  width: 90px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(232, 2, 2);
-  border-bottom-right-radius: 20px;
-  border-top-right-radius: 20px;
-  font-size: 30px;
-  font-weight: bold;
-  color: white;
-  box-shadow: 0 0 5px rgb(232, 2, 2);
-  border: 2px solid rgb(255, 56, 56);
+  width: 70px !important;
+  height: 40px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background-color: rgb(232, 2, 2) !important;
+  border-bottom-right-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+  font-size: 30px !important;
+  font-weight: bold !important;
+  color: white !important;
+  box-shadow: 0 0 5px rgb(232, 2, 2) !important;
+  border: 2px solid rgb(255, 56, 56) !important;
 }
 
 .button {
-  position: absolute;
-  width: 110px;
-  height: 50px;
-  background-color: rgb(89, 89, 89);
-  border-radius: 20px;
-  transition: 0.3s;
-  box-shadow: 0 0 10px rgb(41, 41, 41);
-  border: 2px solid rgb(0, 0, 0);
-  cursor: pointer;
-  text-align: center;
-  padding-top: 7px;
-}
-
-.draw {
-  margin-top: 3px;
-  color: rgb(121, 121, 121);
-  font-size: 30px;
+  position: absolute !important;
+  width: 90px !important;
+  height: 50px !important;
+  background-color: rgb(89, 89, 89) !important;
+  border-radius: 10px !important;
+  transition: 0.3s !important;
+  box-shadow: inset 0 0 15px rgb(42, 42, 42) !important;
+  border: 2px solid rgb(0, 0, 0) !important;
+  cursor: pointer !important;
+  text-align: center !important;
 }
 </style>
