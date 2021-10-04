@@ -1,6 +1,6 @@
 {
   "name": "control-widget",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "Button and Control Widget-Gauge",
   "main": "dist/control-widget.ssr.js",
   "browser": "dist/control-widget.esm.js",
@@ -23,7 +23,12 @@
     "email": "sefaun6654@hotmail.com",
     "github": "https://github.com/fesa6654"
   },
-  "keywords": ["Front-End", "IoT Widget", "vue.js", "nuxt.js"],
+  "keywords": [
+    "Front-End",
+    "IoT Widget",
+    "vue.js",
+    "nuxt.js"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/fesa6654/control-widget"

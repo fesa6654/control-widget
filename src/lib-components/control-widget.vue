@@ -20,11 +20,11 @@ export default /*#__PURE__*/ {
     /* eslint-disable */
     margin() {
       if (this.receivePosition === true) {
-        this.position = 80;
+        this.position = 40;
         this.status = "ON";
         this.statusLight = "rgb(52, 211, 65)";
       } else if (this.receivePosition === false) {
-        this.position = -80;
+        this.position = -3;
         this.status = "OFF";
         this.statusLight = "rgb(232, 2, 2)";
       }
@@ -58,8 +58,7 @@ export default /*#__PURE__*/ {
         class="button"
         :style="{ marginLeft: margin + 'px' }"
         @click="switchPosition()"
-      >
-      </div>
+      ></div>
       <div class="on">|</div>
       <div class="off">O</div>
     </div>
@@ -68,13 +67,13 @@ export default /*#__PURE__*/ {
 
 <style scoped>
 .background {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif !important;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif !important;
   position: relative !important;
-  width: 220px !important;
+  width: 160px !important;
   height: 105px !important;
-  background-color: rgb(145, 145, 145) !important;
-  border-radius: 10px !important;
-  box-shadow: 0 0 15px grey !important;
+  background-color: rgb(106, 106, 106) !important;
+  border-radius: 5px !important;
+  box-shadow: 0 0 10px rgb(83, 80, 80) !important;
   user-select: none !important;
   padding-top: 15px !important;
 }
@@ -91,7 +90,7 @@ export default /*#__PURE__*/ {
 }
 
 .light {
-  width: 120px !important;
+  width: 100px !important;
   height: 25px !important;
   border-radius: 2px !important;
   margin: 0 auto !important;
@@ -101,13 +100,13 @@ export default /*#__PURE__*/ {
 .out {
   position: relative !important;
   display: flex !important;
-  justify-content: center !important;
   align-items: center !important;
   padding-top: 20px !important;
+  padding-left: 28px !important;
 }
 
 .on {
-  width: 70px !important;
+  width: 50px !important;
   height: 40px !important;
   display: flex !important;
   justify-content: center !important;
@@ -123,7 +122,7 @@ export default /*#__PURE__*/ {
 }
 
 .off {
-  width: 70px !important;
+  width: 50px !important;
   height: 40px !important;
   display: flex !important;
   justify-content: center !important;
@@ -140,7 +139,7 @@ export default /*#__PURE__*/ {
 
 .button {
   position: absolute !important;
-  width: 90px !important;
+  width: 65px !important;
   height: 50px !important;
   background-color: rgb(89, 89, 89) !important;
   border-radius: 10px !important;
