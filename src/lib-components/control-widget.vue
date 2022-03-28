@@ -54,11 +54,7 @@ export default /*#__PURE__*/ {
       }"
     />
     <div class="out">
-      <div
-        class="button"
-        :style="{ marginLeft: margin + 'px' }"
-        @click="switchPosition()"
-      ></div>
+      <div class="button" :style="{ marginLeft: margin + 'px' }" @click="switchPosition()"></div>
       <div class="on">|</div>
       <div class="off">O</div>
     </div>
